@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import SearchInput from "@/components/SearchInput";
 import { Banner } from "@/components/Banner";
+import { ProductItem } from "@/components/ProductItem";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,53 @@ const Home = () => {
       </header>
 
       <Banner />
+
+      <div className={styles.gridProducts}>
+        <ProductItem
+          data={{
+            id: 1,
+            image: "/tmp/burguer.png",
+            name: "Texas Hamburguer",
+            price: "R$ 29.99",
+            categoryName: "Monstro",
+          }}
+          mainColor="#Fb9400"
+          secondColor="#CCC"
+        />
+        <ProductItem
+          data={{
+            id: 2,
+            image: "/tmp/burguer.png",
+            name: "Texas Hamburguer",
+            price: "R$ 29.99",
+            categoryName: "Monstro",
+          }}
+          mainColor="#Fb9400"
+          secondColor="#CCC"
+        />
+        <ProductItem
+          data={{
+            id: 3,
+            image: "/tmp/burguer.png",
+            name: "Texas Hamburguer",
+            price: "R$ 29.99",
+            categoryName: "Monstro",
+          }}
+          mainColor="#Fb9400"
+          secondColor="#CCC"
+        />
+        <ProductItem
+          data={{
+            id: 4,
+            image: "/tmp/burguer.png",
+            name: "Texas Hamburguer",
+            price: "R$ 29.99",
+            categoryName: "Monstro",
+          }}
+          mainColor="#Fb9400"
+          secondColor="#CCC"
+        />
+      </div>
     </div>
   );
 };
